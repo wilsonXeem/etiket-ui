@@ -81,7 +81,7 @@ function GetUsers() {
   }, []);
 
   useEffect(() => {
-    fetch("https://etiket-xi.vercel.app/")
+    fetch("https://etiket-xi.vercel.app/user")
       .then((res) => res.json())
       .then((json) => {
         setUsers(json.reverse());
